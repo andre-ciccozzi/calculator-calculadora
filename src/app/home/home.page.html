@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+ <div id="container">
+       
+  <ion-grid>
+    <ion-row>
+        <ion-col>{{valor}}</ion-col>
+        <ion-col>
+          <ion-button (click)="botaoLimpa('')"color="danger"size="large" >C</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col><ion-button (click)="botaoCalculo('Raiz')" color="success"size="large">√</ion-button></ion-col>
+        <ion-col><ion-button (click)="botaoCalculo('Xy')" color="success"size="large">x<sup>y</sup></ion-button></ion-col>
+        <ion-col><ion-button (click)="botaoCalculo('%')" color="success"size="large">%</ion-button></ion-col>
+    </ion-row>
+      <ion-row>
+          <ion-col><ion-button (click)="mostrarValor('7')" color="dark"size="large">7</ion-button></ion-col>
+          <ion-col><ion-button (click)="mostrarValor('8')" color="dark"size="large">8</ion-button></ion-col>
+          <ion-col><ion-button (click)="mostrarValor('9')" color="dark"size="large">9</ion-button></ion-col>
+          <ion-col><ion-button (click)="botaoCalculo('/')" color="success"size="large">/</ion-button></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col><ion-button (click)="mostrarValor('4')" color="dark"size="large">4</ion-button> </ion-col>
+          <ion-col><ion-button (click)="mostrarValor('5')" color="dark"size="large">5</ion-button> </ion-col>
+          <ion-col><ion-button (click)="mostrarValor('6')" color="dark"size="large">6</ion-button> </ion-col>
+          <ion-col><ion-button (click)="botaoCalculo('*')" color="success"size="large">x</ion-button> </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col><ion-button (click)="mostrarValor('1')" color="dark"size="large">1</ion-button></ion-col>
+          <ion-col><ion-button (click)="mostrarValor('2')" color="dark"size="large">2</ion-button></ion-col>
+          <ion-col><ion-button (click)="mostrarValor('3')" color="dark"size="large">3</ion-button></ion-col>
+          <ion-col><ion-button (click)="botaoCalculo('-')" color="success"size="large">-</ion-button></ion-col>
+     </ion-row>
+     <ion-row>
+          <ion-col><ion-button (click)="mostrarValor('0')" color="dark"size="large">0</ion-button></ion-col>
+          <ion-col><ion-button (click)="mostrarValor('.')" color="dark"size="large">.</ion-button></ion-col>
+          <ion-col><ion-button (click)="botaoCalculo('')" color="primary"size="large">=</ion-button></ion-col>
+          <ion-col><ion-button (click)="botaoCalculo('+')" color="success"size="large">+</ion-button></ion-col>
+      </ion-row>
+      </ion-grid>
+   
+  </div>
+</ion-content>
